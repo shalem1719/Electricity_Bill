@@ -7,20 +7,21 @@ import com.wipro.eb.exception.*;
 public class ConnectionService {
 public boolean validate(int currentReading, int previousReading,String type)throws InvalidReadingException, InvalidConnectionException {
 	if((currentReading<previousReading)||(currentReading<0)||(previousReading<0)) {
-		try {
+		//try {
 			throw new InvalidReadingException();
-		} catch (InvalidReadingException e) {
+		//} catch (InvalidReadingException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			//e.printStackTrace();
+		//}
 	}
-	if((type.equals("Domestic")==false)&&(type.equals("Commercial")==false)) {
-		try {
+	else if((type.equals("Domestic")==false)&&(type.equals("Commercial")==false)) {
+		//try {
 			throw new InvalidConnectionException();
-		}	
-		catch(InvalidConnectionException e1) {
-			e1.printStackTrace();
-		}
+		//}	
+		//catch(InvalidConnectionException e1) {
+		//	e1.printStackTrace();
+			//System.out.println(e1);
+		//}
 	}
 	/*if(!type.equals("Commercial")) {
 		try {

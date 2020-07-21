@@ -27,7 +27,7 @@ public static void main(String args[]) {
 	//System.out.println(cs.generateBill(-280, 120, "Domestic"));
 	//Output bust be Incorrect Reading
 	
-	//System.out.println(cs.generateBill(280, -120, "Domestic"));
+	System.out.println(cs.generateBill(280, -120, "Domestic"));
 	//Output bust be Incorrect Reading
 	
 	//System.out.println(cs.generateBill(100, 120, "Domestic"));
@@ -64,7 +64,7 @@ public static void main(String args[]) {
 	//System.out.println(cs.generateBill(200, 120, "commercial"));
 	//Output bust be Invalid ConnectionType
 	
-	System.out.println(cs.generateBill(200, 120, "comm"));
+	//System.out.println(cs.generateBill(200, 120, "comm"));
 	//Output bust be Invalid ConnectionType
 }
 }
